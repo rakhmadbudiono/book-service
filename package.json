@@ -1,0 +1,31 @@
+{
+  "name": "book-service",
+  "version": "1.0.0",
+  "description": "Simple REST API Service of CRUD operations for books.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint --fix . && echo 'Lint complete!'",
+    "test": "jest \"test/.*\\.test\\.js\" --runInBand --forceExit --no-watchman",
+    "start": "node index.js"
+  },
+  "author": "rakhmadbudiono",
+  "jest": {
+    "testEnvironment": "node",
+    "modulePaths": [
+      "./"
+    ],
+    "setupFilesAfterEnv": [
+      "./test/setup.js"
+    ]
+  },
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "jest": "^24.8.0"
+  }
+}
