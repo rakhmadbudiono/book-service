@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "npx eslint --fix . && echo 'Lint complete!'",
-    "test": "jest \"test/.*\\.test\\.js\" --runInBand --forceExit --no-watchman",
+    "test": "jest \"test/.*\\.test\\.js\" --coverage",
     "start": "node index.js"
   },
   "author": "rakhmadbudiono",
